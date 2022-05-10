@@ -17,7 +17,7 @@
     ```
 
 
-You can now view Chess MatchMaker in the browser.
+You can now view Soda Diner in the browser.
 
   Local:            http://localhost:8000/
 
