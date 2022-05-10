@@ -1,0 +1,14 @@
+<h4>
+    CLICK SODA TO SERVE AT
+</h4>
+{{#each diners}}
+<h4 class="thisDiner" data-dinerid="{{_id}}">{{name}}</h4>
+{{/each}}
+
+{{#each sodas}}
+<p class="served">
+    <button data-sodaid="{{_id}}" type="submit" class="addToDiner sodaBtns">{{name}}</button>
+</p>
+{{else}}
+<h4>No sodas available</h4>
+{{/each}}

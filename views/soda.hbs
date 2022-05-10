@@ -1,0 +1,20 @@
+{{#sodas}}
+
+<h1 data-sodaid="{{_id}}">SODA: {{name}}</h1>
+<div class="wrap">
+
+    <p class="item"><b>{{name}}</b>....Fizziness: {{fizziness}}....Rating: {{rating}}
+        <button id="delSoda" class="delBtn" data-_id="{{_id}}">DELETE THIS SODA</button></p>
+    {{#if diners}}
+    <h4>Served at these diners:</h4>
+    {{/if}}
+    {{#each diners}}
+
+    <p class="served">{{name}} - {{location}}</p>
+    {{else}}
+    <p>Not being served at any diners.</p>
+    {{/each}}
+
+</div>
+
+{{/sodas}}

@@ -1,0 +1,11 @@
+<h1>SODA LIST</h1>
+
+{{#each sodas}}
+<a href="/sodas/{{_id}}" class="list">
+    <p><b>{{name}}</b></p>
+</a>
+{{else}}
+<h3>No sodas yet!</h3>
+{{/each}}
+
+<a href="/addSoda"><button class="btn">ADD SODA</button></a>

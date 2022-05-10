@@ -1,0 +1,21 @@
+{{#diners}}
+
+<h1 class="thisDiner" data-dinerid="{{_id}}">DINER: {{name}}</h1>
+<div class="wrap">
+    <p class="item"><b>{{name}}</b> - {{location}}
+        <button id="delDiner" class="delBtn" data-_id="{{_id}}">DELETE THIS DINER</button></p>
+    {{#if sodas}}
+    <h4>Sodas Served:</h4>
+    {{/if}}
+    {{#each sodas}}
+
+    <p class="served">{{name}}
+        <button type="submit" class="removeFromDiner delBtn" data-soda="{{_id}}">Stop Serving</button></p>
+    {{else}}
+    <p>No sodas being served</p>
+    {{/each}}
+</div>
+
+<a href="/diners/{{_id}}/sodas"> <button class="btn"> ADD SODA</button></a><br>
+
+{{/diners}}
